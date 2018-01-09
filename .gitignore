@@ -1,0 +1,95 @@
+
+# Created by https://www.gitignore.io/api/windows,sublimetext,synopsysvcs
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
+### SynopsysVCS ###
+# Waveform formats
+*.vcd
+*.vpd
+*.evcd
+*.fsdb
+
+# Default name of the simulation executable.  A different name can be 
+# specified with this switch (the associated daidir database name is 
+# also taken from here):  -o <path>/<filename>
+simv
+
+# Generated for Verilog and VHDL top configs
+simv.daidir/
+simv.db.dir/
+
+# Infrastructure necessary to co-simulate SystemC models with 
+# Verilog/VHDL models.  An alternate directory may be specified with this
+# switch:  -Mdir=<directory_path>
+csrc/
+
+# Log file - the following switch allows to specify the file that will be
+# used to write all messages from simulation:  -l <filename>
+*.log
+
+# Coverage results (generated with urg) and database location.  The 
+# following switch can also be used:  urg -dir <coverage_directory>.vdb
+simv.vdb/
+urgReport/
+
+# DVE and UCLI related files.
+DVEfiles/
+ucli.key
+
+# When the design is elaborated for DirectC, the following file is created
+# with declarations for C/C++ functions.
+vc_hdrs.h
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/windows,sublimetext,synopsysvcs
